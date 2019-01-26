@@ -19,7 +19,7 @@ body,
 .main {
   margin: 0;
   height: 100%;
-  /*overflow: hidden;*/
+  overflow: hidden;
   background-color: #333;
 }
 
@@ -104,6 +104,10 @@ body {
 
 section {
   min-height: 100%;
+}
+
+#home {
+  padding-top: 15px;
 }
 
 #features {
