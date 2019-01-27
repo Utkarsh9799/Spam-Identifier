@@ -1,11 +1,35 @@
 # IdeaHack-SpamIdentifier
 
 ### Clickbait Checker
-Web application to check if the news headline is a clickbait or not.
+Web application to check if the news headline is a clickbait or not and deciding wheather a message is spam.
+
+### Requirements
+* Python modules (- pandas, - numpy, - scipy, - scikit-learn, - pickle, - flask, - pdb, - sys, - os)
 
 
 
 ### Running  the App
+********************************************************* < Optional > *********************************************************
+
+You may want to create a virtual environment as follows:
+
+1. Create a virtual environment :
+          ```virtualenv <YOUR_VIRTUALENV_NAME> ```
+  2. Activate virtual environment :
+          ```source <YOUR_VIRTUALENV_NAME>/bin/activate - Linux```
+          ```<YOUR_VIRTUALENV_NAME>\Scripts\activate - Windows```
+ 
+ ********************************************************* </ Optional > ********************************************************
+ 
+ Installing Dependencies (Ignore if already done)
+ 
+ 
+          pip install jupyter pandas numpy scipy sklearn
+          (jupyter is optional)
+          pip intsall pickle
+          pip install Flask
+          (pdb, sys and os modules installs by default while installing python, in case not you can use pip to install them)
+
 To run the app  navigate to the project folder in bash and run the following command :
 
 ```bash
