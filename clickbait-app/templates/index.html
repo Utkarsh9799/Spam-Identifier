@@ -1,0 +1,48 @@
+{% include  "top.html" %}
+ <section class="section">
+    <div class="container">
+        <a href=""><h1 class="title"> Clickbait Detector</h1></a>
+        <br><br>
+        <p class="subtitle">
+            <!--Input headline here-->
+        </p>
+        <form method="post" enctype="multipart/form-data" action="/">
+            <div class="field has-addons has-addons-centered ">
+                    <div class="control is-expanded is-dark" style="flex-grow: 0.5; ">
+                        <input class="input is-large " type="text" name="text" placeholder="Paste your headline" autofocus>
+                    </div>
+                    <div class="control" style="padding: 0px 0px 0 10px; ">
+                        <input class="button is-large is-dark" type="submit" value="submit">
+                    </div>
+            </div>
+        </form>
+        <br/>
+
+  {% if (messages['result'] != '' ) %}
+
+            <h3 id="headline" class="title is-2 is-spaced bd-anchor-title">
+              Headline:
+            </h3>
+            <br>
+            <div class=" bd-is-vertical bd-is-1">
+                <h3 class="title is-3">{{  (messages['sentence']) }}</h3>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 id="result" class="title is-4 is-spaced bd-anchor-title">
+              Result: {{  (messages['result'])['flag']  }}
+            </h3>
+            Probability of Clickbait = {{  ((messages['result'])['clickbait-prob']*100)  }}%
+            <progress class="progress is-small {{  (messages['result'])['color']  }}" value="{{  ((messages['result'])['clickbait-prob']*100) }}" max="100"></progress>
+
+  {% endif %}
+
+    </div>
+ </section>
+
+
+
+
+{% include "bottom.html" %}
