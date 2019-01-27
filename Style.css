@@ -115,6 +115,7 @@ section {
 
 #features {
   margin-top: 25px;
+  padding-top: 35px;
 }
 
 .next {
@@ -129,4 +130,8 @@ section {
 
 .head {
   font-family: 'Jura';
+}
+
+#detection {
+  
 }
