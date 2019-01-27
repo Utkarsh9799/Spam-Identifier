@@ -1,5 +1,15 @@
 # IdeaHack-SpamIdentifier
 
+### Web Portal
+
+
+![](Screenshots/Screenshot%20(13).png)
+
+![](Screenshots/Screenshot%20(14).png)
+
+![](Screenshots/Screenshot%20(15).png)
+
+
 ### Clickbait Checker
 Web application to check if the news headline is a clickbait or not and deciding wheather a message is spam.
 
